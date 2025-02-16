@@ -1,0 +1,20 @@
+<div id="voiceflow-chat"></div>
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        console.log("Voiceflow script loaded successfully.");
+        window.voiceflow.chat.load({
+          verify: { projectID: '67b1590d65239dd1ba857acd' },
+          url: 'https://api.voiceflow.com',
+          versionID: 'production'
+        });
+      };
+      v.onerror = function() {
+        console.error("Failed to load Voiceflow script.");
+      };
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
+      v.type = "text/javascript";
+      s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
