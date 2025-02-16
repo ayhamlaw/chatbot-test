@@ -16,7 +16,7 @@
     <h1>Welcome to My Chatbot Test Page</h1>
     <p>This is a simple website to test my Voiceflow chatbot.</p>
 
-    <!-- Chatbot Script -->
+    <!-- Voiceflow Chatbot (Legacy) -->
     <script type="text/javascript">
         (function(d, t) {
             var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -24,14 +24,14 @@
                 console.log("Voiceflow script loaded successfully.");
                 window.voiceflow.chat.load({
                     verify: { projectID: '67b1590d65239dd1ba857acd' },
-                    url: 'https://api.voiceflow.com',
+                    url: 'https://general-runtime.voiceflow.com',
                     versionID: 'production'
                 });
             };
             v.onerror = function() {
                 console.error("Failed to load Voiceflow script.");
             };
-            v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
             v.type = "text/javascript";
             s.parentNode.insertBefore(v, s);
         })(document, 'script');
